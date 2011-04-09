@@ -38,9 +38,9 @@ The following example demonstrates replacing one block type with another globall
 {{{
         public void Replace (int oldid, int newid)
         {
-            World world = new World("path/to/world");
+            NBTWorld world = new BetaWorld("path/to/world");
 
-            foreach (ChunkRef chunk in world.GetChunkManager()) {
+            foreach (ChunkRef chunk in world.ChunkManager) {
                 // Process Chunk
                 for (int y = 0; y <= 127; y++) {
                     for (int x = 0; x <= 15; x++) {
@@ -57,7 +57,7 @@ The following example demonstrates replacing one block type with another globall
                 }
 
                 // Save after each chunk so we can release unneeded chunks back to the system
-                world.GetChunkManager().Save();
+                world.ChunkManager.Save();
             }
         }
 }}}
