@@ -1,8 +1,0 @@
-#summary Programs that have been built with Substrate.
-
-= Applications =
-
-This is an incomplete, opt-in list of applications that have been built using Substrate to interface with Minecraft worlds.  If you have written an application using Substrate, you may add insert it into this list.
-
-|| *Application* || *Description* ||
-|| [http://www.minecraftforum.net/topic/181988-nbtoolkit-map-processing-tools-beta-13/ NBToolkit] || A collection of command-line map processing tools.  Part of the Substrate project. ||
