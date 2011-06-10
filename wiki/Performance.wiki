@@ -5,11 +5,11 @@ Over time as I discover the limits of the CLR JIT, I will post some tips on how 
 
 = Tip 1 =
 
-When iterating over all blocks in a ChunkRef, cache the AlphaBlockCollection into a local variable.
+When iterating over all blocks in a !ChunkRef, cache the !AlphaBlockCollection into a local variable.
 
 <code language="cs">
-foreach (ChunkRef chunk in chunkMan) {
-  AlphaBlockCollection blocks = chunk.Blocks; // Cache the reference
+foreach (!ChunkRef chunk in chunkMan) {
+  !AlphaBlockCollection blocks = chunk.Blocks; // Cache the reference
 
   for (int x = 0; x < blocks.XDim; x++) {
     for (int z = 0; z < blocks.ZDim; z++) {
