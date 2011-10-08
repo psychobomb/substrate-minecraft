@@ -1,0 +1,7 @@
+#summary New location of source code repository
+
+= Repository Location =
+
+The Substrate repository has moved to GitHub to make sharing and collaboration easier.
+
+[https://github.com/jaquadro/Substrate Substrate Project Page on GitHub]
